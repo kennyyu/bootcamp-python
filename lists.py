@@ -12,6 +12,7 @@ def foo():
     print sum(lst)
     print lst[1:4] # lst[1:n] returns the sublist lst[1], lst[2], ... lst[n-1]
     print lst[-1] # return last item
+    print len(lst)
 
     # looping over a list
     for x in lst:

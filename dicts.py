@@ -8,6 +8,8 @@ def foo():
     d["charmander"] = "pokemon"
     d[9] = "cake"
 
+    print len(d)
+
     print d
     print d["c"]
 
