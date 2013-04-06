@@ -15,12 +15,12 @@ def foo():
     print len(lst)
 
     # looping over a list
-    for x in lst:
-        print x
+    for mything in lst:
+        print mything
 
     # loop over a range (no more for (int i = 0; i < n; i++) { ... } business)
-    for i in range(n):
-        print i
+    for i in range(len(lst)):
+        print lst[i]
 
 # This is the pattern you should use when you have python files
 # that are imported by other python files, but don't necessarily
