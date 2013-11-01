@@ -1,5 +1,5 @@
 import unittest
-from ex_strings import *
+from exercises import *
 
 class TestNumWords(unittest.TestCase):
 
