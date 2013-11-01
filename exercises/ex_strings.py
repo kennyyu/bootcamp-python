@@ -32,6 +32,8 @@ def num_unique(lst):
     return len(set(lst))
 
 def longest_word(lst):
+    if len(lst) == 0:
+        return None
     sort_by_length = sorted(lst, key=len, reverse=True)
     return sort_by_length[0]
 
@@ -60,6 +62,8 @@ def find_mismatch(lst1, lst2):
     return mismatch
 
 def most_frequent_word(lst):
+    if len(lst) == 0:
+        return None
     freq = word_frequency(lst)
     sort_by_freq = sorted(freq.items(), key=lambda (word,count): count, reverse=True)
     return sort_by_freq[0]
