@@ -129,7 +129,7 @@ class TestFindMismatch(unittest.TestCase):
         lst1 = ["a", "b", "c", "d", "e"]
         lst2 = ["f", "b", "c", "g", "e"]
         mismatch = find_mismatch(lst1, lst2)
-        expected_mismatch = [("a", "f"), ("d", "g")]
+        expected_mismatch = [0, 3]
         self.assertItemsEqual(mismatch, expected_mismatch)
 
 if __name__ == '__main__':
