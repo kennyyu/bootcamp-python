@@ -12,23 +12,6 @@ class TestNumWords(unittest.TestCase):
     def test_many(self):
         self.assertEqual(6, num_words("a b c def gjijklj higj"))
 
-class TestLongestWord(unittest.TestCase):
-
-    def test_empty(self):
-        self.assertIsNone(longest_word([]))
-
-    def test_many(self):
-        self.assertEqual("aaaaaaaaaa",
-                         longest_word(["a", "aaaaa", "aaaaaaaaaa", "aa", "aaa"]))
-
-class TestNumUnique(unittest.TestCase):
-
-    def test_zero(self):
-        self.assertEqual(0, num_unique([]))
-
-    def test_many(self):
-        self.assertEqual(3, num_unique(["a", "a", "aa", "ab", "ab", "ab", "aa"]))
-
 class TestSumList(unittest.TestCase):
 
     def test_empty(self):
@@ -51,6 +34,14 @@ class TestAppears(unittest.TestCase):
     def test_negative(self):
         self.assertEqual(False, appears_in_list("f", ["a", "b", "c"]))
 
+class TestNumUnique(unittest.TestCase):
+
+    def test_zero(self):
+        self.assertEqual(0, num_unique([]))
+
+    def test_many(self):
+        self.assertEqual(3, num_unique(["a", "a", "aa", "ab", "ab", "ab", "aa"]))
+
 class TestReverse(unittest.TestCase):
 
     def test_empty(self):
@@ -58,6 +49,16 @@ class TestReverse(unittest.TestCase):
 
     def test_many(self):
         self.assertEqual(["a", "b", "c"], reverse_list(["c", "b", "a"]))
+
+class TestSortReverse(unittest.TestCase):
+
+    def test_one(self):
+        self.assertEqual([1], sort_reverse([1]))
+
+    def test_many(self):
+        lst = [5, 6, 9, -1, -3, 0, 5, -6, 2]
+        expected_lst = [9, 6, 5, 5, 2, 0, -1, -3, -6]
+        self.assertSequenceEqual(expected_lst, sort_reverse(lst))
 
 class TestRemoveVowels(unittest.TestCase):
 
@@ -72,6 +73,15 @@ class TestRemoveVowels(unittest.TestCase):
 
     def test_mix(self):
         self.assertEqual("bBcC", remove_vowels("aAbBcCeE"))
+
+class TestLongestWord(unittest.TestCase):
+
+    def test_empty(self):
+        self.assertIsNone(longest_word([]))
+
+    def test_many(self):
+        self.assertEqual("aaaaaaaaaa",
+                         longest_word(["a", "aaaaa", "aaaaaaaaaa", "aa", "aaa"]))
 
 class TestWordFrequency(unittest.TestCase):
 
