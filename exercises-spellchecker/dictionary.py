@@ -10,6 +10,9 @@ def load(dictionary_name):
     Opens the file called `dictionary_name` and returns
     the set of words in that file.
 
+    Hint: call the strip() method on a word to trim surrounding
+    whitespace and newlines.
+
     Each line in the file contains exactly one word.
     """
     # TODO: remove the pass line and write your own code
