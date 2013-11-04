@@ -25,6 +25,8 @@ else:
 
 # Use "and" and "or" to take the logical and/or of
 # two boolean values.
+# Note that an if statement does not need to have a
+# matching "else".
 if b and c:
     print "b and c are both True"
 
