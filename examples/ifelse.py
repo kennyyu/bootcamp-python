@@ -11,7 +11,8 @@ e = "apple"
 if d == 3:
     print "d is 3"
 elif d == 4:
-    print "d is 4"
+    food = d + 7
+    print "FOOD", food
 elif d == 5:
     print "d is 5"
 else:
