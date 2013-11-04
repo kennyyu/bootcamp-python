@@ -1,4 +1,4 @@
 HCS Bootcamp - Into to Python
 =============================
 
-[See the wiki](wiki).
+[See the wiki](https://github.com/hcs/bootcamp-python/wiki)
