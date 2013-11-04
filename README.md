@@ -1,5 +1,4 @@
-HCS Bootcamp - Python Tutorial
-==============================
+HCS Bootcamp - Into to Python
+=============================
 
-Each file contains information about various components of python.
-When you are ready, try doing the problems in `problems.py`!
+[See the wiki](wiki).
