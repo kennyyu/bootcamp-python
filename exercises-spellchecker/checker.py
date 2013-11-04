@@ -37,6 +37,10 @@ text_file_name = sys.argv[2]
 start = time.clock()
 
 dict = dictionary.load(dictionary_name)
+if dict is None:
+    print "dictionary load failed"
+    sys.exit(-1)
+
 text_file = open(text_file_name, "rb")
 misspelled = set()
 num_total = 0
